@@ -179,3 +179,28 @@ themeButton.addEventListener('click', () => {
 })
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+ // Animation repeats when scrolling back up
+});
+
+// ScrollReveal().reveal('.home');
+// ScrollReveal().reveal('.new')
+// ScrollReveal().reveal('.discount')
+// ScrollReveal().reveal('.featured')
+// ScrollReveal().reveal('.testimonial')
+
+
+
+sr.reveal(`.home__data, .featured__container,
+ .new_container, .join__data,
+  .test__container, .footer `)
+
+
+sr.reveal(`.home__images`,{delay: 600})
+sr.reveal(`.service__card`,{interval: 100})
+sr.reveal(`.discount__data`,{origin: 'left'})
+sr.reveal(`.discount__images`,{origin: 'right'})
